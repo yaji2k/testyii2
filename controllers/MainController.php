@@ -9,15 +9,6 @@ use Yii;
 class MainController extends Controller
 {
 
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-        ];
-    }
-
     public function actionIndex()
     {
         $users = User::find()->all();
